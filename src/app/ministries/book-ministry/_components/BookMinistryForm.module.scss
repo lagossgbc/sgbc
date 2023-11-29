@@ -1,0 +1,21 @@
+.Input {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  label {
+    text-align: center;
+    display: block;
+    margin-top: -5px;
+    width: 100%;
+  }
+
+  input {
+    background-color: white;
+    text-align: center;
+
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}

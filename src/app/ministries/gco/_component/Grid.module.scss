@@ -1,0 +1,70 @@
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin: 100px auto;
+
+  @media screen and (max-width: 920px) {
+    margin-bottom: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .Top {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0 20px;
+
+    p {
+      text-align: justify;
+    }
+
+    @media screen and (max-width: 920px) {
+      text-align: center;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    gap: auto;
+    padding: auto 16px;
+    justify-content: center;
+
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    @media screen and (max-width: 640px) {
+      gap: 30px;
+    }
+
+    li {
+      width: 300px;
+
+      @media screen and (max-width: 1110px) {
+        width: 250px;
+      }
+      @media screen and (max-width: 920px) {
+        width: 300px;
+      }
+    }
+  }
+
+  .Activities {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    padding: 20px;
+
+    @media screen and (max-width: 920px) {
+      background-color: #e6e5e5;
+      padding: 100px 20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.InnerContainer {
+  background-color: #e0eeff;
+  padding: 64px 16px;
+  margin: 50px -16px;
+
+  .Div {
+    text-align: center;
+  }
+}
+
+.Figure {
+  margin: 0 -16px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.Btn {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 820px) {
+  .InnerContainer {
+    position: relative;
+    border-radius: 20px;
+    padding: 64px 16px;
+    z-index: 2;
+    margin: 70px 10px 30px;
+
+    .Div {
+      text-align: left;
+    }
+  }
+
+  .Flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 35px;
+    border-radius: 20px;
+
+    .pDiv {
+      max-width: 65%;
+    }
+
+    .Btn {
+      order: 2;
+      margin-bottom: 0;
+      display: block;
+    }
+
+    .Figure {
+      min-width: 30%;
+      background-color: #e0eeff;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}

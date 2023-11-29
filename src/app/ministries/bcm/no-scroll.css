@@ -1,0 +1,7 @@
+ul::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

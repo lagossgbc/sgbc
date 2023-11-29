@@ -1,0 +1,40 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+  width: 100%;
+
+  div {
+    display: flex;
+  }
+
+  span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #f9af1c;
+    border: 2px solid white;
+    animation: jump ease-in-out 800ms infinite alternate;
+  }
+
+  @for $i from 1 through 5 {
+    span:nth-child(#{$i}) {
+      animation-delay: $i * 0.1s;
+    }
+  }
+
+  p {
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+}
+
+@keyframes jump {
+  100% {
+    transform: translateY(-3rem) scale(1.3);
+    background-color: #f9d71c;
+  }
+}
